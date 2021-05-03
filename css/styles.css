@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-color: #333;
+  color: azure;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.menus {
+  display: grid;
+  place-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-menu {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 2rem;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  opacity: 1;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.main-menu--hide-front {
+  transform: scale(5);
+  opacity: 0;
+}
+
+.main-menu__item {
+  line-height: 2.5;
+}
+.second-menu,
+.third-menu {
+  filter: blur(5px);
+}
+
+.second-menu {
+  transform: scale(0.7);
+}
+
+.third-menu {
+  transform: scale(0.5);
+}
+
+.main-menu--second-level {
+  transform: scale(0.7);
+}
+
+.main-menu--show {
+  transform: scale(1);
+  filter: blur(0);
+}
